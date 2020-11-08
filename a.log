@@ -1,1 +1,2 @@
-2020-11-06-21:57|INFO  |get_log.py:30 |abc
+2020-11-08-15:12|INFO  |test_add_member.py:39 |<Response [200]>
+2020-11-08-15:12|INFO  |test_add_member.py:42 |{"errcode":0,"errmsg":"ok","access_token":"3f7RZ5ERc1WtuW2OpVFBGMEhbcoJb4QiNer4_HBVC-raOHtyDEXxXRlDn7kaOAc5HcKrYOE6Rad16JkKsE8OHY_pkVGhG46B_EDjkIk9EbnTjsDk2x798HXEHkWj34etuiDyQlGYgcI40tuAz-1ZB7-nkFqbgpES1AMEYVFqQ41GHoqXOK1_5c6DkE8My-hzwjOslu7mykCfoIaqbZorhg","expires_in":7200}
