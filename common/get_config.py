@@ -1,13 +1,17 @@
 import configparser
+import os
+
 
 class GetConfig():
+    base_path=os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
     # 创建配置文件对象的初始化，要读取文件的
     def __init__(self):
         # 创建配置文件对象
         self.config=configparser.ConfigParser()
-        # 读取配置文件
-        self.config.read("config.ini")
+        # 读取配置文件,想要读取根路径下的config.ini
+        config_path=os.path.join(self.base_path,"config.ini")
+        self.config.read(config_path)
 
     # 通过section和option，获取到value
     def get_value(self,section,option):
@@ -17,4 +21,5 @@ class GetConfig():
 
 if __name__ == "__main__":
     a=GetConfig()
+
     print(a.get_value("env", "ip"))

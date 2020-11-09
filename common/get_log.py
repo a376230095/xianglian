@@ -1,7 +1,10 @@
 import logging
+import os
 
 
 class Logs():
+    base_path=os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+
 
     def __init__(self,):
         # 创建生成器日志对象
@@ -23,8 +26,10 @@ class Logs():
 
     # 生成文件处理器
     def set_file_handle(self):
+        # 把log放入到log文件夹中
+        log_path=os.path.join(self.base_path,"log","log.log")
         # 生成流处理对象
-        self.file_handle=logging.FileHandler(filename="../log.log", mode="w")
+        self.file_handle=logging.FileHandler(filename=log_path, mode="w")
         # 设置流处理器的等级
         self.file_handle.setLevel(logging.DEBUG)
         # 设置把格式化器弄到流处理器中
