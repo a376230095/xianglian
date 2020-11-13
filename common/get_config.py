@@ -18,6 +18,9 @@ class GetConfig():
         value=self.config.get(section,option)
         return value
 
+# 在这里变成对象即可，我们引用对家就好了
+cf=GetConfig()
+
 
 if __name__ == "__main__":
     a=GetConfig()

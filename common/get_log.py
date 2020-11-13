@@ -46,6 +46,7 @@ class Logs():
         # 这里必须返回logger对象，方便使用logger.info等方法
         return self.logger
 
+log=Logs().get_log()
 
 if __name__ =="__main__":
     a=Logs()
