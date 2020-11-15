@@ -49,6 +49,7 @@ class Logs():
 log=Logs().get_log()
 
 if __name__ =="__main__":
-    a=Logs()
-    a.get_log().info("abc")
+    pass
+    # a=Logs()
+    # a.get_log().info("abc")
     # a.logger.info()

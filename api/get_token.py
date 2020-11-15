@@ -1,3 +1,4 @@
+import os
 from cgi import log
 
 import requests
@@ -30,7 +31,8 @@ class GetToken(BaseApi):
     #     }
         # res=requests.request(**data).json()
     # pip install pyyaml
-        with open(file="../data/contact/member/member_api.yml") as f:
+        file_path=os.path.join(self.BASE_PATH,"data/contact/member/member_api.yml")
+        with open(file_path) as f:
             data = yaml.safe_load(f)
             # 需要解决一下拿出来的数据不对的问题
             # 需要修改这个字典

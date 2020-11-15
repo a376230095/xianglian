@@ -64,7 +64,7 @@ class BaseApi():
 
 if __name__=="__main__":
     a=BaseApi()
-    # print(a.BASE_PATH)
+    print(a.BASE_PATH)
     # print(a.load_yml("data/contact/member/add_member.yml"))
     name="tong"
     # print(a.template("data/contact/member/a.yml",{"name":name}))

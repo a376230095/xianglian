@@ -1,5 +1,5 @@
 method: post
-url: https://qyapi.weixin.qq.com/cgi-bin/user/create?
+url: https://qyapi.weixin.qq.com/cgi-bin/user/create
 params: access_token=${token}
 json:
   "userid": ${userid}
