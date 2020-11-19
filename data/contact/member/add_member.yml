@@ -1,8 +1,14 @@
-method: post
-url: https://qyapi.weixin.qq.com/cgi-bin/user/create
-params: access_token=${token}
-json:
-  "userid": ${userid}
-  "name": ${name}
-  "mobile": ${mobile}
-  "department": ${department}
+add:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/user/create
+  params: access_token=${token}
+  json:
+    "userid": ${userid}
+    "name": ${name}
+    "mobile": ${mobile}
+    "department": ${department}
+
+delete:
+  method: get
+  url: https://qyapi.weixin.qq.com/cgi-bin/user/delete?
+  params: access_token=${token}&userid=${userid}

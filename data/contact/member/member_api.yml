@@ -1,28 +1,14 @@
-# [1,2,3,4]
-#- 1
-#- 2
-#- 3
-#- 4
-#
-# {"a":"b"}
-#a: b
-#
-# {"a":{"b":[1,2,3,4]}}
-#a:
-#  b: [1,2,3,4]
-#a:
-#  b:
-#    - 1
-#    - 2
-#    - 3
-#    - 4
+add:
+  method: post
+  url: https://qyapi.weixin.qq.com/cgi-bin/user/create
+  params: access_token=${token}
+  json:
+    "userid": ${userid}
+    "name": ${name}
+    "mobile": ${mobile}
+    "department": ${department}
 
-#data = {
-#    "method": "get",
-#    "url": "https://qyapi.weixin.qq.com/cgi-bin/gettoken",
-#    "params": f"corpid={self.id}&corpsecret={self.contact_secret}"
-#}
-method: get
-url: https://qyapi.weixin.qq.com/cgi-bin/gettoken
-params: "params"
-
+delete:
+  method: get
+  url: https://qyapi.weixin.qq.com/cgi-bin/user/delete?
+  params: access_token=${token}&userid=${userid}
