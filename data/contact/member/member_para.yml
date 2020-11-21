@@ -1,0 +1,13 @@
+add:
+
+delete:
+  # 标题
+  ids:
+    - userid存在，token也正确，删除联系人成功
+    - userid不存在，删除失败
+    - userid非法，删除失败
+  # 参数化的内容
+  data:
+    - ["tongtong1234",0,"abc"]
+    - ["tongtongtongtong",0,"abc"]
+    - ["?<>$%^&*",0,"abc"]

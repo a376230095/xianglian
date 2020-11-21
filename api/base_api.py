@@ -18,7 +18,7 @@ class BaseApi():
     def load_yml(self,file_path):
         yml_path=os.path.join(self.BASE_PATH,file_path)
 
-        with open(yml_path) as f:
+        with open(yml_path,encoding="utf-8") as f:
             # 这里传file_path路径问题
             data=yaml.safe_load(f)
             # 这里是一个python的数据类型，大概率就是字典、列表、集合、元祖
