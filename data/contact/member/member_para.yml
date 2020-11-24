@@ -1,5 +1,13 @@
+# 增加联系人的参数化，userid、mobile、department、name，errcode，errmsg
 add:
+  ids:
+    - userid、mobile、department、name存在而且不重复，添加成功
+    - userid存在，添加失败
+  data:
+    - ["tongtongtong1234","tongtongtong1234","13172667777",[1,2],0,"created"]
+    - ["tong","tong","13172668887",[1,2],60102,"userid exist"]
 
+# 删除联系人的参数化
 delete:
   # 标题
   ids:
@@ -8,6 +16,6 @@ delete:
     - userid非法，删除失败
   # 参数化的内容
   data:
-    - ["tongtong1234",0,"abc"]
-    - ["tongtongtongtong",0,"abc"]
-    - ["?<>$%^&*",0,"abc"]
+    - ["tongtongtong1234",0,"deleted"]
+    - ["tongtongtongtong",60111,"userid not found"]
+    - ["?<>$%^&*",60111,"userid not found"]

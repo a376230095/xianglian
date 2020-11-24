@@ -5,6 +5,8 @@ from string import Template
 import requests
 import yaml
 
+from common.get_log import log
+
 
 class BaseApi():
     # 根路径基本不变，是一个常量，尽量用大写英文字母
@@ -12,6 +14,7 @@ class BaseApi():
     # 封装我们的requests的方法,传入请求的数据，返回字典类型的响应体
     def send_api(self,data:dict):
         res=requests.request(**data).json()
+        log.info(f"响应值：{res}")
         return res
 
     # 读取yml文件,file_path是相对路径，是yaml文件的相对路径
