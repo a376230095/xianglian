@@ -1,0 +1,87 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_case.contact.member.test_member",
+    "children" : [ {
+      "name" : "test_add_member[userid、mobile、department、name存在而且不重复，添加成功]",
+      "uid" : "30ebce23b941f522",
+      "parentUid" : "c736a4e9b367e91060c0d6bcc750592d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606398807988,
+        "stop" : 1606398808379,
+        "duration" : 391
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[1, 2]", "0", "'created'", "'13172667777'", "'tongtongtong1234'", "'tongtongtong1234'" ]
+    }, {
+      "name" : "test_add_member[userid存在，添加失败]",
+      "uid" : "2dc97f129a43c141",
+      "parentUid" : "c736a4e9b367e91060c0d6bcc750592d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606398808414,
+        "stop" : 1606398808706,
+        "duration" : 292
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[1, 2]", "60102", "'userid exist'", "'13172668887'", "'tong'", "'tong'" ]
+    }, {
+      "name" : "test_delete_member[userid存在，token也正确，删除联系人成功]",
+      "uid" : "58c92e0599480c97",
+      "parentUid" : "c736a4e9b367e91060c0d6bcc750592d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606398809010,
+        "stop" : 1606398809381,
+        "duration" : 371
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "0", "'deleted'", "'tongtongtong1234'" ]
+    }, {
+      "name" : "test_delete_member[userid不存在，删除失败]",
+      "uid" : "1aa1112068426da2",
+      "parentUid" : "c736a4e9b367e91060c0d6bcc750592d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606398809401,
+        "stop" : 1606398809619,
+        "duration" : 218
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "60111", "'userid not found'", "'tongtongtongtong'" ]
+    }, {
+      "name" : "test_delete_member[userid非法，删除失败]",
+      "uid" : "8ff9e4a0f7a207d8",
+      "parentUid" : "c736a4e9b367e91060c0d6bcc750592d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606398809646,
+        "stop" : 1606398809916,
+        "duration" : 270
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "60111", "'userid not found'", "'?<>$%^&*'" ]
+    }, {
+      "name" : "test_add_member_smoke",
+      "uid" : "c0edf9b030263136",
+      "parentUid" : "c736a4e9b367e91060c0d6bcc750592d",
+      "status" : "broken",
+      "time" : {
+        "start" : 1606398809931,
+        "stop" : 1606398809931,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test_case.contact.member.test_member"
+  } ]
+}

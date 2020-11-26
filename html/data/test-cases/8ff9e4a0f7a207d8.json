@@ -1,0 +1,126 @@
+{
+  "uid" : "8ff9e4a0f7a207d8",
+  "name" : "test_delete_member[userid非法，删除失败]",
+  "fullName" : "test_case.contact.member.test_member.TestMember#test_delete_member",
+  "historyId" : "647d7081bdf29ca7f2526a6ca1b02ca8",
+  "time" : {
+    "start" : 1606398809646,
+    "stop" : 1606398809916,
+    "duration" : 270
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "access_token",
+    "time" : {
+      "start" : 1606398807383,
+      "stop" : 1606398807735,
+      "duration" : 352
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "delete",
+    "time" : {
+      "start" : 1606398808730,
+      "stop" : 1606398809007,
+      "duration" : 277
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2be29a46b196b259",
+      "name" : "log",
+      "source" : "2be29a46b196b259.txt",
+      "type" : "text/plain",
+      "size" : 798
+    }, {
+      "uid" : "e2bfc81bf9b821b5",
+      "name" : "stderr",
+      "source" : "e2bfc81bf9b821b5.txt",
+      "type" : "text/plain",
+      "size" : 1614
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "删除联系人"
+  }, {
+    "name" : "feature",
+    "value" : "通讯录联系人的测试类"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.contact.member"
+  }, {
+    "name" : "suite",
+    "value" : "test_member"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMember"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-4F3KR3S3"
+  }, {
+    "name" : "thread",
+    "value" : "15420-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.contact.member.test_member"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "errcode",
+    "value" : "60111"
+  }, {
+    "name" : "errmsg",
+    "value" : "'userid not found'"
+  }, {
+    "name" : "userid",
+    "value" : "'?<>$%^&*'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ff9e4a0f7a207d8.json",
+  "parameterValues" : [ "60111", "'userid not found'", "'?<>$%^&*'" ]
+}

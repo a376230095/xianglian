@@ -1,0 +1,4 @@
+[32mINFO    [0m tong:test_member.py:52 --------------执行删除联系人--------------
+[32mINFO    [0m tong:member.py:33 {'method': 'get', 'params': 'access_token=Bzj0sL9d4hJMuoGIfcYkeJM_2nMapDH-SRkQBWI4UT5LIyui477YAzOGKoDSrOPk6AISTatVQY5bysvmk-r3b-7BNAOgcasdAbP2f3JvEuVUHPJ2Fb_vdF66C9EwgBT26zsnalwL3qiiW9abyxwjiexXTs7FYq41mnVjh2gk3syzoRCV2F6dqb_puXpBzMzdyLiM9YZioZ6AEAIK25tYfQ&userid=tongtongtongtong', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/delete?'}
+[32mINFO    [0m tong:base_api.py:17 响应值：{'errcode': 60111, 'errmsg': 'userid not found, hint: [1606398811_53_86cef0c1a4f2e4793552d09077d86055], from ip: 112.97.51.209, more info at https://open.work.weixin.qq.com/devtool/query?e=60111'}
+[32mINFO    [0m tong:test_member.py:56 --------------结束删除联系人--------------

@@ -1,0 +1,4 @@
+[32mINFO    [0m tong:test_member.py:39 --------------执行增加联系人--------------
+[32mINFO    [0m tong:member.py:24 {'json': {'department': [1, 2], 'mobile': 13172668887, 'name': 'tong', 'userid': 'tong'}, 'method': 'post', 'params': 'access_token=Bzj0sL9d4hJMuoGIfcYkeJM_2nMapDH-SRkQBWI4UT5LIyui477YAzOGKoDSrOPk6AISTatVQY5bysvmk-r3b-7BNAOgcasdAbP2f3JvEuVUHPJ2Fb_vdF66C9EwgBT26zsnalwL3qiiW9abyxwjiexXTs7FYq41mnVjh2gk3syzoRCV2F6dqb_puXpBzMzdyLiM9YZioZ6AEAIK25tYfQ', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create'}
+[32mINFO    [0m tong:base_api.py:17 响应值：{'errcode': 60102, 'errmsg': 'Warning: wrong json format. userid existed, hint: [1606398810_53_0ad53c2722346bc91cb8fc31505ab0fb], from ip: 112.97.51.209, more info at https://open.work.weixin.qq.com/devtool/query?e=60102'}
+[32mINFO    [0m tong:test_member.py:43 --------------结束增加联系人--------------

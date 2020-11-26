@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Nov 26 21:53:29 CST 2020","Thu Nov 26 21:53:29 CST 2020","270","test_case.contact.member","test_member","TestMember","","","test_delete_member[userid非法，删除失败]",""
+"passed","Thu Nov 26 21:53:29 CST 2020","Thu Nov 26 21:53:29 CST 2020","218","test_case.contact.member","test_member","TestMember","","","test_delete_member[userid不存在，删除失败]",""
+"passed","Thu Nov 26 21:53:27 CST 2020","Thu Nov 26 21:53:28 CST 2020","391","test_case.contact.member","test_member","TestMember","","","test_add_member[userid、mobile、department、name存在而且不重复，添加成功]",""
+"broken","Thu Nov 26 21:53:29 CST 2020","Thu Nov 26 21:53:29 CST 2020","0","test_case.contact.member","test_member","TestMember","","","test_add_member_smoke",""
+"passed","Thu Nov 26 21:53:29 CST 2020","Thu Nov 26 21:53:29 CST 2020","371","test_case.contact.member","test_member","TestMember","","","test_delete_member[userid存在，token也正确，删除联系人成功]",""
+"passed","Thu Nov 26 21:53:28 CST 2020","Thu Nov 26 21:53:28 CST 2020","292","test_case.contact.member","test_member","TestMember","","","test_add_member[userid存在，添加失败]",""

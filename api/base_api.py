@@ -27,6 +27,13 @@ class BaseApi():
             # 这里是一个python的数据类型，大概率就是字典、列表、集合、元祖
             return data
 
+    # 优化api的代码，进行精简
+    def send_data_api(self,p_data,yaml_path,sub):
+        request_data = self.template(yaml_path, p_data, sub)
+        log.info(request_data)
+        res = self.send_api(request_data)
+        return res
+
     # 定义一个模板技术的方法，把yml文件中的$变量，都变成我们需要的变量
     # 要传什么参数先不管，返回一个字典类型的请求
     # file_path是yml文件的相对路径

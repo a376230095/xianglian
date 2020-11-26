@@ -1,0 +1,61 @@
+[ {
+  "uid" : "2dc97f129a43c141",
+  "name" : "test_add_member[userid存在，添加失败]",
+  "time" : {
+    "start" : 1606398808414,
+    "stop" : 1606398808706,
+    "duration" : 292
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1aa1112068426da2",
+  "name" : "test_delete_member[userid不存在，删除失败]",
+  "time" : {
+    "start" : 1606398809401,
+    "stop" : 1606398809619,
+    "duration" : 218
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "30ebce23b941f522",
+  "name" : "test_add_member[userid、mobile、department、name存在而且不重复，添加成功]",
+  "time" : {
+    "start" : 1606398807988,
+    "stop" : 1606398808379,
+    "duration" : 391
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "58c92e0599480c97",
+  "name" : "test_delete_member[userid存在，token也正确，删除联系人成功]",
+  "time" : {
+    "start" : 1606398809010,
+    "stop" : 1606398809381,
+    "duration" : 371
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c0edf9b030263136",
+  "name" : "test_add_member_smoke",
+  "time" : {
+    "start" : 1606398809931,
+    "stop" : 1606398809931,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "8ff9e4a0f7a207d8",
+  "name" : "test_delete_member[userid非法，删除失败]",
+  "time" : {
+    "start" : 1606398809646,
+    "stop" : 1606398809916,
+    "duration" : 270
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

@@ -1,11 +1,11 @@
 import pytest
-
+import allure
 from api.contact.member import Member
 from api.get_token import GetToken
 from common.get_config import cf
 from common.get_log import log
 
-
+@allure.feature("通讯录联系人的测试类")
 class TestMember():
     # 初始化member对象，获取到了token值
     member = Member()
@@ -31,6 +31,9 @@ class TestMember():
 
 
 
+    @allure.story("添加联系人")
+    # 设置allure的执行优先级
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.parametrize(("userid,name,mobile,department,errcode,errmsg"),add_para,ids=add_ids)
     def test_add_member(self, access_token, userid, name, mobile, department, errcode, errmsg,add):
         log.info("--------------执行增加联系人--------------")
@@ -41,6 +44,9 @@ class TestMember():
         assert errcode == res["errcode"]
         assert errmsg in res["errmsg"]
 
+    @allure.story("删除联系人")
+    # 设置allure的执行优先级
+    @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.parametrize(("userid,errcode,errmsg"), delete_para, ids=delete_ids)
     def test_delete_member(self, access_token, userid, errcode, errmsg,delete):
         log.info("--------------执行删除联系人--------------")
@@ -50,3 +56,38 @@ class TestMember():
         log.info("--------------结束删除联系人--------------")
         assert errcode == res["errcode"]
         assert errmsg in res["errmsg"]
+
+    @allure.story("添加联系人冒烟测试")
+    # 设置allure的执行优先级
+    @allure.severity(allure.severity_level.BLOCKER)
+    def test_add_member_smoke(self, access_token, userid, name, mobile, department, errcode, errmsg,add):
+        userid="weafwe"
+        name="aesf"
+        mobile="saf"
+        department="sf"
+        errcode="sef"
+        errmsg="safsf"
+        log.info("--------------执行增加联系人--------------")
+        # 1.获取access_token
+        # 2.添加联系人
+        res = self.member.add_member(access_token, userid, name, mobile, department)
+        log.info("--------------结束增加联系人--------------")
+        assert errcode == res["errcode"]
+        assert errmsg in res["errmsg"]
+
+    # @allure.story("删除联系人冒烟测试")
+    # # 设置allure的执行优先级
+    # @allure.severity(allure.severity_level.BLOCKER)
+    # def test_delete_member_smoke(self, access_token, userid, errcode, errmsg,delete):
+    #     log.info("--------------执行删除联系人--------------")
+    #     # 1.获取access_token
+    #     # 2.添加联系人
+    #     res = self.member.delete_member(access_token, userid)
+    #     log.info("--------------结束删除联系人--------------")
+    #     assert errcode == res["errcode"]
+    #     assert errmsg in res["errmsg"]
+
+
+    # def test_一长串的功能点(self):
+        # @allure.step("增加")
+        # 一条用例测试增加、删除、修改、获取

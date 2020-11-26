@@ -1,0 +1,134 @@
+{
+  "uid" : "a4c038380bd9d8e0",
+  "name" : "test_add_member_smoke",
+  "fullName" : "test_case.contact.member.test_member.TestMember#test_add_member_smoke",
+  "historyId" : "37c62eb1a2083ea22ae68153a8187cc5",
+  "time" : {
+    "start" : 1606398554805,
+    "stop" : 1606398554805,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "_pytest.fixtures.FixtureLookupError: ('userid', <FixtureRequest for <Function test_add_member_smoke>>)",
+  "statusTrace" : "file C:\\Users\\tongtong\\xianglian_requests\\test_case\\contact\\member\\test_member.py, line 60\n      @allure.story(\"添加联系人冒烟测试\")\n      # 设置allure的执行优先级\n      @allure.severity(allure.severity_level.BLOCKER)\n      def test_add_member_smoke(self, access_token, userid, name, mobile, department, errcode, errmsg,add):\nE       fixture 'userid' not found\n>       available fixtures: access_token, add, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, delete, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\tongtong\\xianglian_requests\\test_case\\contact\\member\\test_member.py:60",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "access_token",
+    "time" : {
+      "start" : 1606398554809,
+      "stop" : 1606398555201,
+      "duration" : 392
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "add",
+    "time" : {
+      "start" : 1606398555202,
+      "stop" : 1606398555563,
+      "duration" : 361
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "_pytest.fixtures.FixtureLookupError: ('userid', <FixtureRequest for <Function test_add_member_smoke>>)",
+    "statusTrace" : "file C:\\Users\\tongtong\\xianglian_requests\\test_case\\contact\\member\\test_member.py, line 60\n      @allure.story(\"添加联系人冒烟测试\")\n      # 设置allure的执行优先级\n      @allure.severity(allure.severity_level.BLOCKER)\n      def test_add_member_smoke(self, access_token, userid, name, mobile, department, errcode, errmsg,add):\nE       fixture 'userid' not found\n>       available fixtures: access_token, add, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, delete, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\tongtong\\xianglian_requests\\test_case\\contact\\member\\test_member.py:60",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "95dbdfbefa657bad",
+      "name" : "log",
+      "source" : "95dbdfbefa657bad.txt",
+      "type" : "text/plain",
+      "size" : 1249
+    }, {
+      "uid" : "c14ef7273cf50997",
+      "name" : "stderr",
+      "source" : "c14ef7273cf50997.txt",
+      "type" : "text/plain",
+      "size" : 2516
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "add::0",
+    "time" : {
+      "start" : 1606398555589,
+      "stop" : 1606398555966,
+      "duration" : 377
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "通讯录联系人的测试类"
+  }, {
+    "name" : "story",
+    "value" : "添加联系人冒烟测试"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.contact.member"
+  }, {
+    "name" : "suite",
+    "value" : "test_member"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMember"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-4F3KR3S3"
+  }, {
+    "name" : "thread",
+    "value" : "16376-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.contact.member.test_member"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a4c038380bd9d8e0.json",
+  "parameterValues" : [ ]
+}

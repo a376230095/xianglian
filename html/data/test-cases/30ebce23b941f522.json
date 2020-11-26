@@ -1,0 +1,150 @@
+{
+  "uid" : "30ebce23b941f522",
+  "name" : "test_add_member[userid、mobile、department、name存在而且不重复，添加成功]",
+  "fullName" : "test_case.contact.member.test_member.TestMember#test_add_member",
+  "historyId" : "914be2820d043c4ce9345216d2aaa8b3",
+  "time" : {
+    "start" : 1606398807988,
+    "stop" : 1606398808379,
+    "duration" : 391
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "access_token",
+    "time" : {
+      "start" : 1606398807383,
+      "stop" : 1606398807735,
+      "duration" : 352
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "add",
+    "time" : {
+      "start" : 1606398807735,
+      "stop" : 1606398807985,
+      "duration" : 250
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "84d54b705b1c7920",
+      "name" : "log",
+      "source" : "84d54b705b1c7920.txt",
+      "type" : "text/plain",
+      "size" : 1389
+    }, {
+      "uid" : "6bfa69b6428eeb50",
+      "name" : "stderr",
+      "source" : "6bfa69b6428eeb50.txt",
+      "type" : "text/plain",
+      "size" : 2804
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "add::0",
+    "time" : {
+      "start" : 1606398809949,
+      "stop" : 1606398810166,
+      "duration" : 217
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "添加联系人"
+  }, {
+    "name" : "feature",
+    "value" : "通讯录联系人的测试类"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.contact.member"
+  }, {
+    "name" : "suite",
+    "value" : "test_member"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMember"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-4F3KR3S3"
+  }, {
+    "name" : "thread",
+    "value" : "15420-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.contact.member.test_member"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "department",
+    "value" : "[1, 2]"
+  }, {
+    "name" : "errcode",
+    "value" : "0"
+  }, {
+    "name" : "errmsg",
+    "value" : "'created'"
+  }, {
+    "name" : "mobile",
+    "value" : "'13172667777'"
+  }, {
+    "name" : "name",
+    "value" : "'tongtongtong1234'"
+  }, {
+    "name" : "userid",
+    "value" : "'tongtongtong1234'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "30ebce23b941f522.json",
+  "parameterValues" : [ "[1, 2]", "0", "'created'", "'13172667777'", "'tongtongtong1234'", "'tongtongtong1234'" ]
+}

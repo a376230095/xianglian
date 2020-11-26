@@ -1,0 +1,12 @@
+2020-11-26-21:53|INFO  |member.py:24 |{'json': {'department': [1, 2], 'mobile': 13172667777, 'name': 'tongtongtong1234', 'userid': 'tongtongtong1234'}, 'method': 'post', 'params': 'access_token=Bzj0sL9d4hJMuoGIfcYkeJM_2nMapDH-SRkQBWI4UT5LIyui477YAzOGKoDSrOPk6AISTatVQY5bysvmk-r3b-7BNAOgcasdAbP2f3JvEuVUHPJ2Fb_vdF66C9EwgBT26zsnalwL3qiiW9abyxwjiexXTs7FYq41mnVjh2gk3syzoRCV2F6dqb_puXpBzMzdyLiM9YZioZ6AEAIK25tYfQ', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create'}
+2020-11-26-21:53|INFO  |member.py:24 |{'json': {'department': [1, 2], 'mobile': 13172667777, 'name': 'tongtongtong1234', 'userid': 'tongtongtong1234'}, 'method': 'post', 'params': 'access_token=Bzj0sL9d4hJMuoGIfcYkeJM_2nMapDH-SRkQBWI4UT5LIyui477YAzOGKoDSrOPk6AISTatVQY5bysvmk-r3b-7BNAOgcasdAbP2f3JvEuVUHPJ2Fb_vdF66C9EwgBT26zsnalwL3qiiW9abyxwjiexXTs7FYq41mnVjh2gk3syzoRCV2F6dqb_puXpBzMzdyLiM9YZioZ6AEAIK25tYfQ', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create'}
+2020-11-26-21:53|INFO  |base_api.py:17 |响应值：{'errcode': 60104, 'errmsg': 'Warning: wrong json format. mobile existed:tongtongtong1234'}
+2020-11-26-21:53|INFO  |base_api.py:17 |响应值：{'errcode': 60104, 'errmsg': 'Warning: wrong json format. mobile existed:tongtongtong1234'}
+2020-11-26-21:53|INFO  |test_member.py:52 |--------------执行删除联系人--------------
+2020-11-26-21:53|INFO  |test_member.py:52 |--------------执行删除联系人--------------
+2020-11-26-21:53|INFO  |member.py:33 |{'method': 'get', 'params': 'access_token=Bzj0sL9d4hJMuoGIfcYkeJM_2nMapDH-SRkQBWI4UT5LIyui477YAzOGKoDSrOPk6AISTatVQY5bysvmk-r3b-7BNAOgcasdAbP2f3JvEuVUHPJ2Fb_vdF66C9EwgBT26zsnalwL3qiiW9abyxwjiexXTs7FYq41mnVjh2gk3syzoRCV2F6dqb_puXpBzMzdyLiM9YZioZ6AEAIK25tYfQ&userid=tongtongtong1234', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/delete?'}
+2020-11-26-21:53|INFO  |member.py:33 |{'method': 'get', 'params': 'access_token=Bzj0sL9d4hJMuoGIfcYkeJM_2nMapDH-SRkQBWI4UT5LIyui477YAzOGKoDSrOPk6AISTatVQY5bysvmk-r3b-7BNAOgcasdAbP2f3JvEuVUHPJ2Fb_vdF66C9EwgBT26zsnalwL3qiiW9abyxwjiexXTs7FYq41mnVjh2gk3syzoRCV2F6dqb_puXpBzMzdyLiM9YZioZ6AEAIK25tYfQ&userid=tongtongtong1234', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/delete?'}
+2020-11-26-21:53|INFO  |base_api.py:17 |响应值：{'errcode': 0, 'errmsg': 'deleted'}
+2020-11-26-21:53|INFO  |base_api.py:17 |响应值：{'errcode': 0, 'errmsg': 'deleted'}
+2020-11-26-21:53|INFO  |test_member.py:56 |--------------结束删除联系人--------------
+2020-11-26-21:53|INFO  |test_member.py:56 |--------------结束删除联系人--------------

@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "_pytest.fixtures.FixtureLookupError: ('userid', <FixtureRequest for <Function test_add_member_smoke>>)",
+      "children" : [ {
+        "name" : "test_add_member_smoke",
+        "uid" : "c0edf9b030263136",
+        "parentUid" : "7faa1a981c21d9a6375adc35e965786d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606398809931,
+          "stop" : 1606398809931,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7faa1a981c21d9a6375adc35e965786d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

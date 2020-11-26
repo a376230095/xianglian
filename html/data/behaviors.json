@@ -1,0 +1,99 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "通讯录联系人的测试类",
+    "children" : [ {
+      "name" : "添加联系人",
+      "children" : [ {
+        "name" : "test_add_member[userid、mobile、department、name存在而且不重复，添加成功]",
+        "uid" : "30ebce23b941f522",
+        "parentUid" : "8ba3b2de150d028c357a5beef245c538",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606398807988,
+          "stop" : 1606398808379,
+          "duration" : 391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1, 2]", "0", "'created'", "'13172667777'", "'tongtongtong1234'", "'tongtongtong1234'" ]
+      }, {
+        "name" : "test_add_member[userid存在，添加失败]",
+        "uid" : "2dc97f129a43c141",
+        "parentUid" : "8ba3b2de150d028c357a5beef245c538",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606398808414,
+          "stop" : 1606398808706,
+          "duration" : 292
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1, 2]", "60102", "'userid exist'", "'13172668887'", "'tong'", "'tong'" ]
+      } ],
+      "uid" : "8ba3b2de150d028c357a5beef245c538"
+    }, {
+      "name" : "删除联系人",
+      "children" : [ {
+        "name" : "test_delete_member[userid存在，token也正确，删除联系人成功]",
+        "uid" : "58c92e0599480c97",
+        "parentUid" : "20d2e0f02b8228d4a3a4b39ba922a5e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606398809010,
+          "stop" : 1606398809381,
+          "duration" : 371
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0", "'deleted'", "'tongtongtong1234'" ]
+      }, {
+        "name" : "test_delete_member[userid不存在，删除失败]",
+        "uid" : "1aa1112068426da2",
+        "parentUid" : "20d2e0f02b8228d4a3a4b39ba922a5e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606398809401,
+          "stop" : 1606398809619,
+          "duration" : 218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "60111", "'userid not found'", "'tongtongtongtong'" ]
+      }, {
+        "name" : "test_delete_member[userid非法，删除失败]",
+        "uid" : "8ff9e4a0f7a207d8",
+        "parentUid" : "20d2e0f02b8228d4a3a4b39ba922a5e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606398809646,
+          "stop" : 1606398809916,
+          "duration" : 270
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "60111", "'userid not found'", "'?<>$%^&*'" ]
+      } ],
+      "uid" : "20d2e0f02b8228d4a3a4b39ba922a5e1"
+    }, {
+      "name" : "添加联系人冒烟测试",
+      "children" : [ {
+        "name" : "test_add_member_smoke",
+        "uid" : "c0edf9b030263136",
+        "parentUid" : "552e9d8cad4b44c387ecb33d62f75c20",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606398809931,
+          "stop" : 1606398809931,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "552e9d8cad4b44c387ecb33d62f75c20"
+    } ],
+    "uid" : "c36b946227b337c3ef85f43b1dc93c72"
+  } ]
+}
