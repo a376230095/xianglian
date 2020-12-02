@@ -7,7 +7,7 @@ add:
     "name": ${name}
     "mobile": ${mobile}
     "department": ${department}
-
+    "address": ${address}
 delete:
   method: get
   url: https://qyapi.weixin.qq.com/cgi-bin/user/delete?

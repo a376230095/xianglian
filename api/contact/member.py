@@ -16,16 +16,18 @@ class Member(BaseApi):
 
     # 增加联系人的api，肯定要传值的，想通过传入请求参数，获取响应
 
-    def add_member(self,token,userid,name,mobile,department):
+    def add_member(self,token,userid,name,mobile,department,address=None):
 
         # 请求数据已经放在yml文件中了，但是呢，需要把${}都变成变量，直接使用封装好的tamplate方法
         p_data={"token":token,"userid":userid,"name":name
-                ,"mobile":mobile,"department":department}
-        request_data=self.template("data/contact/member/member_api.yml",p_data,"add")
+                ,"mobile":mobile,"department":department,"address":address}
+        # request_data=self.template("data/contact/member/member_api.yml",p_data,"add")
         # request_data["json"]["department"]=list(request_data["json"]["department"])
-        log.info(request_data)
-        #发送http请求，因为requests已经被封装了，直接用封装的函数
-        res= self.send_api(request_data)
+        # log.info(request_data)
+        #发送http请求，因为requests已经被封装了，直
+        # 接用封装的函数
+        # res= self.send_api(request_data)
+        res=self.send_data_api(p_data,"data/contact/member/member_api.yml","add")
         #返回响应
         return res
 

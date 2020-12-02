@@ -30,6 +30,23 @@ class BaseApi():
     # 优化api的代码，进行精简
     def send_data_api(self,p_data,yaml_path,sub):
         request_data = self.template(yaml_path, p_data, sub)
+        # 对我们的request_data进行处理就好了
+        # 写死的方法,拿到json的dict
+        log.error(f"查看try之前的请求参数：{request_data}")
+        try:
+            # 当出现异常，后面的代码不跑
+            json_request_data=request_data["json"]
+            log.error("是否有一次是运行下去的")
+            # 提取json字典中所有的key值
+            for key in json_request_data.keys():
+                # 当value的值与"None"相等的时候
+                if json_request_data[key]== "None":
+                    # 为什么"None"=="None",字符串的内存地址是相等的,说法不太对
+                    log.error("是否触发修改None的代码")
+                    json_request_data[key]=None
+        except:
+            # try引发的异常会在except中运行
+            pass
         log.info(request_data)
         res = self.send_api(request_data)
         return res

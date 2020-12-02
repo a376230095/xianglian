@@ -60,11 +60,11 @@ class TestMember():
     @allure.story("添加联系人冒烟测试")
     # 设置allure的执行优先级
     @allure.severity(allure.severity_level.BLOCKER)
-    def test_add_member_smoke(self, access_token, userid, name, mobile, department, errcode, errmsg,add):
+    def test_add_member_smoke(self, access_token,add):
         userid="weafwe"
         name="aesf"
-        mobile="saf"
-        department="sf"
+        mobile="13177771165"
+        department=[1,2]
         errcode="sef"
         errmsg="safsf"
         log.info("--------------执行增加联系人--------------")
