@@ -90,7 +90,7 @@ class Mysql:
         finally:
             cur.close()
 
-
+mysql=Mysql()
 
 
 if __name__ == "__main__":

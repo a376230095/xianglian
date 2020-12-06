@@ -1,14 +1,16 @@
 import json
 import os
 from string import Template
-
 import requests
 import yaml
 
+from common.get_config import cf
 from common.get_log import log
 
 
 class BaseApi():
+    ip=cf.get_value("env","ip")
+
     # 根路径基本不变，是一个常量，尽量用大写英文字母
     BASE_PATH=os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     # 封装我们的requests的方法,传入请求的数据，返回字典类型的响应体

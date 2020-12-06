@@ -1,2 +1,6 @@
-2020-12-03-22:00|INFO  |use_mysql.py:45 |现在在执行delete语句：delete from test where id=10
-2020-12-03-22:00|INFO  |use_mysql.py:51 |delete语句执行成功
+2020-12-06-22:10|INFO  |use_mysql.py:27 |现在在执行select语句：select cal_id from cal_id where userid='calendar'
+2020-12-06-22:10|INFO  |use_mysql.py:33 |select语句执行成功
+2020-12-06-22:10|ERROR |base_api.py:37 |查看try之前的请求参数：{'json': {'cal_id_list': ['wcMCs1DwAAsNJioYxjQylRmR5kC3GEnA']}, 'method': 'post', 'params': 'access_token=z0AmhtpY37LY8O3hvaorDEzQ5Q95tFG-zx5q6jcgrSgxV6kv796Dywvh1Xioma56boj9kEg6FCOOIUd6eWskLQVKFohgxgNCTymV5qZxu5d92JneMir1VqPkHB-iHgDPXkf8-VzHhUH-2Q9lD7K17AU0vYEsbE840z-1n_fYuHHasVIHBxALFIEiDflVbauxc85O3oSHvcEpLpN7JDqbuA', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/oa/calendar/get'}
+2020-12-06-22:10|ERROR |base_api.py:41 |是否有一次是运行下去的
+2020-12-06-22:10|INFO  |base_api.py:52 |{'json': {'cal_id_list': ['wcMCs1DwAAsNJioYxjQylRmR5kC3GEnA']}, 'method': 'post', 'params': 'access_token=z0AmhtpY37LY8O3hvaorDEzQ5Q95tFG-zx5q6jcgrSgxV6kv796Dywvh1Xioma56boj9kEg6FCOOIUd6eWskLQVKFohgxgNCTymV5qZxu5d92JneMir1VqPkHB-iHgDPXkf8-VzHhUH-2Q9lD7K17AU0vYEsbE840z-1n_fYuHHasVIHBxALFIEiDflVbauxc85O3oSHvcEpLpN7JDqbuA', 'url': 'https://qyapi.weixin.qq.com/cgi-bin/oa/calendar/get'}
+2020-12-06-22:11|INFO  |base_api.py:19 |响应值：{'errcode': 0, 'errmsg': 'ok', 'calendar_list': [{'cal_id': 'wcMCs1DwAAsNJioYxjQylRmR5kC3GEnA', 'organizer': 'calendar', 'summary': 'test1', 'color': '#0001FF', 'description': 'hehedada', 'shares': [], 'readonly': 1}]}
